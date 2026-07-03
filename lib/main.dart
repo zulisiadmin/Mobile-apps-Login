@@ -116,7 +116,7 @@ class OnboardingScreen extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           const Text(
-            'Ini halaman yang muncul hanya saat aplikasi pertama kali dijalankan.',
+            'Kenali fitur aplikasi sebelum mulai menggunakan.',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16),
           ),
