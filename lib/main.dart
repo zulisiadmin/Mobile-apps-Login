@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplikasi Saya',
+      title: 'SharedPreferences Navigation',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
@@ -67,7 +67,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const AppScaffold(
-      title: 'Aplikasi Saya',
+      title: 'Splash Screen',
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
