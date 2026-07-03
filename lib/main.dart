@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SharedPreferences Navigation',
+      title: 'Aplikasi Saya',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
@@ -67,14 +67,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const AppScaffold(
-      title: 'Splash Screen',
+      title: 'Aplikasi Saya',
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.mobile_friendly, size: 88, color: Colors.indigo),
           SizedBox(height: 24),
           Text(
-            'Memeriksa status aplikasi...',
+            'Mohon tunggu sebentar...',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 18),
           ),
@@ -104,19 +104,19 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
-      title: 'Onboarding Screen',
+      title: 'Selamat Datang',
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(Icons.explore, size: 88, color: Colors.indigo),
           const SizedBox(height: 24),
           const Text(
-            'Selamat datang!',
+            'Mulai pengalaman baru',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 12),
           const Text(
-            'Kenali fitur aplikasi sebelum mulai menggunakan.',
+            'Aplikasi ini membantu Anda mengakses layanan dengan lebih mudah.',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16),
           ),
@@ -149,19 +149,19 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
-      title: 'Login Screen',
+      title: 'Masuk',
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(Icons.lock_open, size: 88, color: Colors.indigo),
           const SizedBox(height: 24),
           const Text(
-            'Silakan login',
+            'Masuk ke akun Anda',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 12),
           const Text(
-            'Status login akan disimpan dengan SharedPreferences.',
+            'Gunakan akun Anda untuk melanjutkan ke halaman utama.',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16),
           ),
@@ -207,19 +207,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
-      title: 'Home Screen',
+      title: 'Beranda',
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(Icons.home, size: 88, color: Colors.indigo),
           const SizedBox(height: 24),
           const Text(
-            'Berhasil masuk Home',
+            'Selamat datang di Beranda',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 12),
           const Text(
-            'Jika aplikasi dibuka lagi, Splash Screen akan langsung mengarahkan ke halaman ini karena is_logged_in bernilai true.',
+            'Anda sudah berhasil masuk dan dapat menggunakan aplikasi.',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16),
           ),
@@ -230,7 +230,7 @@ class HomeScreen extends StatelessWidget {
           ),
           TextButton(
             onPressed: () => _resetApp(context),
-            child: const Text('Reset ke pertama kali buka'),
+            child: const Text('Mulai ulang aplikasi'),
           ),
         ],
       ),
